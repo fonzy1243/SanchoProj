@@ -85,6 +85,10 @@ int main()
 					// Also assume each student is dorming
 					printf("Present Address: %s\n", PRESENT_ADDRESS);
 				}
+				else
+				{
+					printf("Invalid username or password.\n");
+				}
 
 				break;
 			case 2:
