@@ -1,0 +1,3 @@
+C:/Users/Fonzy/CLionProjects/SanchoProj/cmake-build-debug/CMakeFiles/SanchoProj.dir
+C:/Users/Fonzy/CLionProjects/SanchoProj/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Fonzy/CLionProjects/SanchoProj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
