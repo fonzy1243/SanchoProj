@@ -73,15 +73,19 @@ int main()
 
 				userIndex = logIn(students, passwords, username, password);
 
-				printf("Full Name: %s\n", students[userIndex]);
-				// Assume each student is taking BS CPE.
-				printf("Degree Program: %s\n", DEGREE_PROGRAM);
-				// Assume each student is from Imus, Cavite
-				printf("Permanent Address: %s\n", STUDENT_ADDRESS);
-				// Assume each student has the phone # "123456789"
-				printf("Permanent Telephone No.: %s\n", STUDENT_PHONE);
-				// Also assume each student is dorming
-				printf("Present Address: %s\n", PRESENT_ADDRESS);
+				if (userIndex != -1)
+				{
+					printf("Full Name: %s\n", students[userIndex]);
+					// Assume each student is taking BS CPE.
+					printf("Degree Program: %s\n", DEGREE_PROGRAM);
+					// Assume each student is from Imus, Cavite
+					printf("Permanent Address: %s\n", STUDENT_ADDRESS);
+					// Assume each student has the phone # "123456789"
+					printf("Permanent Telephone No.: %s\n", STUDENT_PHONE);
+					// Also assume each student is dorming
+					printf("Present Address: %s\n", PRESENT_ADDRESS);
+				}
+
 				break;
 			case 2:
 				break;
