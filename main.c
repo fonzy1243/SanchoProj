@@ -3,6 +3,9 @@
 // student string format:
 // LAST, FIRST MIDDLE INITIAL
 
+// course string format:
+// COURSE TITLE, SECTION
+
 int main()
 {
 	char students[STUDENTS_MAX][STUDENT_NAME_MAX];
@@ -25,6 +28,14 @@ int main()
 
 	char courses[10][COURSES_TITLE_MAX];
 
+	strcpy(courses[0], "LBOEC2A, EC1");
+	strcpy(courses[1], "TITLE, CLASS");
+	// ... add more //
+
+	/*
+	 * Array to store the courses of each student
+	 * Maximum of 8 courses per student, you can change it under COURSES_MAX
+	 */
 	char studentCourses[STUDENTS_MAX][COURSES_MAX][COURSES_TITLE_MAX];
 
 	bool exit = false;
@@ -61,6 +72,16 @@ int main()
 				input(password, PASSWORD_MAX);
 
 				userIndex = logIn(students, passwords, username, password);
+
+				printf("Full Name: %s\n", students[userIndex]);
+				// Assume each student is taking BS CPE.
+				printf("Degree Program: %s\n", DEGREE_PROGRAM);
+				// Assume each student is from Imus, Cavite
+				printf("Permanent Address: %s\n", STUDENT_ADDRESS);
+				// Assume each student has the phone # "123456789"
+				printf("Permanent Telephone No.: %s\n", STUDENT_PHONE);
+				// Also assume each student is dorming
+				printf("Present Address: %s\n", PRESENT_ADDRESS);
 				break;
 			case 2:
 				break;
